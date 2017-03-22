@@ -1,5 +1,5 @@
 <!doctype html> 
-<html lang="en" ng-app>
+<html lang="en" ng-app> <!-- initializing an angular app -->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -150,7 +150,7 @@
                                 name:'Hours',
                                 comment:''
                             }"> -->
-        <!-- Array obj -->
+        <!-- Array obj (ng-init initialize a js object/array of obj) -->
         <div class="row" ng-init="
                             fcontents=[
                             {
@@ -164,9 +164,10 @@
                                 comment:''
                             }]
                             "> 
+            <!-- get obj value with angular-->
             <section id={{fcontent.id}} class="col-sm-4">
                 <ul class="media-list">
-                    <li class="media" ng-repeat="fcontent in fcontents">
+                    <li class="media" ng-repeat="fcontent in fcontents"> <!-- angular 'foreach'-->
                         <span>{{fcontent.name}}</span><br>
                         <!-- Using two way data binding -->
                         <p>Comment: {{fcontent.comment}}</p><!-- retrieves the 'fcontent' obj 'comment' prop value -->

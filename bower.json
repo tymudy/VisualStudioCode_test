@@ -1,0 +1,14 @@
+{
+  "name": "Git_test",
+  "homepage": "https://github.com/tymudy/VisualStudioCode_test",
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

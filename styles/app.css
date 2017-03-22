@@ -15,7 +15,7 @@ body {
 /* displayes the logo image as background */
 /* we are styling the div by the image width and height */
 #logo-img {
-  background: url('../images/restaurant-logo_large.png') no-repeat;
+  background: url('images/restaurant-logo_large.png') no-repeat;
   width: 150px;
   height: 150px;
   margin: 10px 15px 10px 0;
@@ -168,11 +168,11 @@ body {
 
 /* fill out the background for each tile */
 #menu-tile {
-  background: url('../images/menu-tile.jpg') no-repeat;
+  background: url('images/menu-tile.jpg') no-repeat;
   background-position: center; /* to stay always in the center of the container so when we squise the browser it will display it fine */
 }
 #specials-tile {
-  background: url('../images/specials-tile.jpg') no-repeat;
+  background: url('images/specials-tile.jpg') no-repeat;
   background-position: center;
 }
 
@@ -323,7 +323,7 @@ h3.menu-item-title {
   /* Home Page */
   /* set the backround image for jumbotron*/
   .container .jumbotron {
-    background: url('../images/jumbotron_992.jpg') no-repeat;
+    background: url('images/jumbotron_992.jpg') no-repeat;
     height: 558px;
   }
   /* End Home Page */
@@ -334,7 +334,7 @@ h3.menu-item-title {
   /* Home Page */
   /* set the backround image for jumbotron*/
   .container .jumbotron {
-    background: url('../images/jumbotron_768.jpg') no-repeat;
+    background: url('images/jumbotron_768.jpg') no-repeat;
     height: 432px;
   }
   /* End Home Page */

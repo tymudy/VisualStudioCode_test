@@ -1,0 +1,14 @@
+{
+  "name": "git_test",
+  "description": "test for grunt",
+  "main": "index.js",
+  "authors": [
+    "emma.sorban"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/tymudy/VisualStudioCode_test",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}

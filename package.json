@@ -2,7 +2,7 @@
   "name": "git_test",
   "version": "1.0.0",
   "description": "test for grunt",
-  "main": "index.js",
+  "main": "index.html",
   "directories": {
     "test": "test"
   },
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/tymudy/VisualStudioCode_test#readme",
   "devDependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0"
   }
 }

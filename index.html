@@ -143,22 +143,39 @@
   
   <footer class="panel-footer">
       <div class="container">
-        <div class="row" ng-init="
+        <!-- Single obj -->
+        <!--<div class="row" ng-init="
                             fcontent={
                                 id:'hours', 
                                 name:'Hours',
                                 comment:''
-                            }">
+                            }"> -->
+        <!-- Array obj -->
+        <div class="row" ng-init="
+                            fcontents=
+                            {
+                                id:'hours', 
+                                name:'Hours',
+                                comment:''
+                            },
+                            {
+                                id:'address', 
+                                name:'Address',
+                                comment:''
+                            }
+                            "> 
             <section id={{fcontent.id}} class="col-sm-4">
-                <span>{{fcontent.name}}</span><br>
-                Sun-Thurs: 11:15am - 10:00pm<br>
-                Fri: 11:15am - 2:30pm<br>
-                Saturday Closed
-                <p>Comment: {{fcontent.comment}}</p>
-                <p>Type your comment:
-                    <input type="text" ng-model="fcontent.comment">
-                </p>
-                <hr class="visible-xs"> 
+                <ul class="media-list">
+                    <li class="media" ng-repeat="fcontent in fcontents">
+                        <span>{{fcontent.name}}</span><br>
+                        <!-- Using two way data binding -->
+                        <p>Comment: {{fcontent.comment}}</p><!-- retrieves the 'fcontent' obj 'comment' prop value -->
+                        <p>Type your comment:
+                            <input type="text" ng-model="fcontent.comment"> <!-- Binding the input with the 'fcontent' obj prop 'comment'-->
+                        </p>
+                        <hr class="visible-xs">
+                    </li>
+                </ul>
             </section>
         </div>
       </div>
@@ -180,7 +197,7 @@
           <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
           <hr class="visible-xs">
         </section>
-        
+    
         <section id="testimonials" class="col-sm-4">
           <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
           <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>

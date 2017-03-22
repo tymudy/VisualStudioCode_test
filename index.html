@@ -1,5 +1,5 @@
 <!doctype html> 
-<html lang="en">
+<html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -142,7 +142,27 @@
   <!-- when the browser gets smaller we want the 3 section to stack and to be separated with a horizontal row -->
   
   <footer class="panel-footer">
-    <div class="container">
+      <div class="container">
+        <div class="row" ng-init="
+                            fcontent={
+                                id:'hours', 
+                                name:'Hours',
+                                comment:''
+                            }">
+            <section id={{fcontent.id}} class="col-sm-4">
+                <span>{{fcontent.name}}</span><br>
+                Sun-Thurs: 11:15am - 10:00pm<br>
+                Fri: 11:15am - 2:30pm<br>
+                Saturday Closed
+                <p>Comment: {{fcontent.comment}}</p>
+                <p>Type your comment:
+                    <input type="text" ng-model="fcontent.comment">
+                </p>
+                <hr class="visible-xs"> 
+            </section>
+        </div>
+      </div>
+    <!--<div class="container">
       <div class="row">
         
         <section id="hours" class="col-sm-4">
@@ -167,13 +187,14 @@
         </section>
         
       </div>
-      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div> <!-- Note there is the copyright sign attached -->
-    </div>
+      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>  Note there is the copyright sign attached
+    </div> -->
   </footer>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap-css/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
   <script src="scripts/app.js"></script>
 </body>
 </html>
